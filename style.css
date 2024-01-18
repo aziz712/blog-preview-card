@@ -1,0 +1,120 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700;1,800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Montserrat:ital,wght@0,300;0,500;1,100;1,200;1,300&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+  :root {
+     --Yellow: hsl(47, 88%, 63%);
+     --White: hsl(0, 0%, 100%);
+     --Grey: hsl(0, 0%, 50%);
+     --Black: hsl(0, 0%, 7%);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.attribution {
+    position: absolute;
+    bottom: 40px;
+    left: 39%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Yellow);
+    min-height: 100vh;
+    font-family: 'figtree', sans-serif;
+    font-weight: 400px;
+    line-height: 1.5;
+}
+
+.box {
+    background-color: var(--White);
+    width: 25rem;
+    height: 31rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: solid 1px black;
+    box-shadow: 6px 6px;
+    padding: 15px;
+    margin: 10px;
+}
+
+
+
+h1 {
+    font-weight: 800;
+    color: var(--Black);
+    font-size: 800;
+}
+
+h1:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+p span {
+    font-size: 1rem;
+}
+
+.box-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 24px;
+    padding: 24px;
+    width: 335px; 
+}  
+
+p {
+    color: var(--Grey);
+}
+.assets {
+    height: 100%;
+    border-radius: 13%;
+}
+
+.tag {
+    background-color: var(--Yellow);
+    width: fit-content;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.25rem;
+    color: var(--Black);
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.avatar {
+    height: 32px;
+    width: 32px;
+    
+}
+
+.name {
+    color: var(--Black);
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0;
+    text-decoration: none;
+    
+}
+
+.info {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+    
+@media screen and (max-width: 375px) {
+    .card {
+        max-width: 74%;
+        width: 100%;
+    }
+}
